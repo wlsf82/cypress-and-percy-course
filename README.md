@@ -1,37 +1,106 @@
 # cypress-and-percy-course
 
-Repository for the basic course of visual regression testing with Cypress and Percy, from the [Talking About Testing School](https://udemy.com/user/walmyr).
+Repository for the basic course of visual regression testing with Cypress and Percy, by Walmyr Filho.
 
-## Pre-requirements
+## Lesson 1
 
-To install the project dependencies and run the automated tests, you need to have [Node.js](http://nodejs.org) and [NPM](http://npmjs.com) installed on your computer.
+Initial setup
 
-> The following versions of the above-mentioned packages were used during the development of this project (`node v14.15.0` and `npm 6.14.8`.)
+<details>
+  <summary>Lesson's content</summary>
+    <br>- Git clone - git@github.com:wlsf82/cypress-and-percy-course.git<br>
+    - Initializing a Node.js project - npm init -y<br>
+    - Updating the test script - percy exec -- cypress run<br>
+    - Installation - npm i cypress @percy/cypress -D<br>
+    - Cypress' files and directories structure - npx cypress open<br>
+    - Updating the .gitignore file - cypress/screenshots/ and cypress/videos/<br>
+    - Configuring Percy to work with Cypress - https://docs.percy.io/docs/cypress<br>
+    - Cypress docs - https://docs.cypress.io/guides/overview/why-cypress.html<br>
+    - Percy docs - https://docs.percy.io/docs
+</details>
 
-> Installing Node.js automatically installs NPM so you don't need to do it yourself.
+## Lesson 2
 
-## Installation
+[Percy.io](https://percy.io)
 
-After cloning the project, access its directory (`cd cypress-and-percy-course`) and run `npm install` to install the dev dependencies.
+<details>
+  <summary>Lesson's content</summary>
+    <br>- Creating an account on percy.io<br>
+    - Creating a project<br>
+    - Exporting the project token
+</details>
 
-## Exporting the project token created on Percy.io
+## Lesson 3
 
-As an environment variable, export the token of your project (you can find it on Percy's dashboard). See the below examples for exporting the token for both Windows and Unix (Mac and Linux) operating systems.
+The first test
 
-```
-# Windows
-$ set PERCY_TOKEN=<your token here>
+<details>
+  <summary>Lesson's content</summary>
+    <br>- Getting to know the application under test<br>
+    - Creating the first visual regression test with Cypress & Percy<br>
+    - Running the first test<br>
+    - Approving the snapshot on Percy's dashboaard
+</details>
 
-# Unix
-$ export PERCY_TOKEN=<your token here>
-```
+## Lesson 4
 
-> Source: https://docs.percy.io/docs/cypress
+Testing an invalid email address
 
-## Running the tests
+<details>
+  <summary>Lesson's content</summary>
+    <br>- Writing the test<br>
+    - Running the test<br>
+    - Approving the snapshot on percy.io
+</details>
 
-Run `npm test` to execute the tests in headless mode.
+## Lesson 5
+
+Testing filling all the mandatory form fields
+
+<details>
+  <summary>Lesson's content</summary>
+    <br>- Writing the test<br>
+    - Running the test<br>
+    - Approving the snapshot on percy.io
+</details>
+
+## Lesson 6
+
+Testing the selection of a VIP ticket
+
+<details>
+  <summary>Lesson's content</summary>
+    <br>- Writing the test<br>
+    - Running the test<br>
+    - Approving the snapshot on percy.io
+</details>
+
+## Lesson 7
+
+Testing dynamic content
+
+<details>
+  <summary>Lesson's content</summary>
+    <br>- The problem of dynamic content in visual regression testing<br>
+    - Testing successfully submitting the form<br>
+    - Running the test and aproving the snapshot on percy.io<br>
+    - Re-running the tests and getting a false-negative result<br>
+    - Dealing with dynamic content - https://docs.percy.io/docs/percy-specific-css<br>
+    - Re-running the tests and approving the new snapshot on percy.io<br>
+    - Re-running the tests without false-negative results
+</details>
+
+## Lesson 8
+
+Ending
+
+<details>
+  <summary>Lesson's content</summary>
+    <br>- Project docs - updating the README.md file<br>
+    - Learnings summary<br>
+    - Going beyond - #ReadTheDocs
+</details>
 
 ___
 
-A course from the [Talking About Testing School](https://udemy.com/user/walmyr).
+A course created by Walmyr Filho.
