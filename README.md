@@ -2,104 +2,35 @@
 
 Repository for the basic course of visual regression testing with Cypress and Percy, by Walmyr Filho.
 
-## Lesson 1
+## Pre-requirements
 
-Initial setup
+To install the project dependencies and run the automated tests, you need to have [Node.js](http://nodejs.org) and [NPM](http://npmjs.com) installed on your computer.
 
-<details>
-  <summary>Lesson's content</summary>
-    <br>- Git clone - git@github.com:wlsf82/cypress-and-percy-course.git<br>
-    - Initializing a Node.js project - npm init -y<br>
-    - Updating the test script - percy exec -- cypress run<br>
-    - Installation - npm i cypress @percy/cypress -D<br>
-    - Cypress' files and directories structure - npx cypress open<br>
-    - Updating the .gitignore file - cypress/screenshots/ and cypress/videos/<br>
-    - Configuring Percy to work with Cypress - https://docs.percy.io/docs/cypress<br>
-    - Cypress docs - https://docs.cypress.io/guides/overview/why-cypress.html<br>
-    - Percy docs - https://docs.percy.io/docs
-</details>
+> The following versions of the above-mentioned packages were used during the development of this project (`node v14.15.0` and `npm 6.14.8`.)
 
-## Lesson 2
+> Installing Node.js automatically installs NPM so you don't need to do it yourself.
 
-[Percy.io](https://percy.io)
+## Installation
 
-<details>
-  <summary>Lesson's content</summary>
-    <br>- Creating an account on percy.io<br>
-    - Creating a project<br>
-    - Exporting the project token
-</details>
+After cloning the project, access its directory (`cd cypress-and-percy-course`) and run `npm install` to install the dev dependencies.
 
-## Lesson 3
+## Exporting the project token created on Percy.io
 
-The first test
+As an environment variable, export the token of your project (you can find it on Percy's dashboard). See the below examples for exporting the token for both Windows and Unix (Mac and Linux) operating systems.
 
-<details>
-  <summary>Lesson's content</summary>
-    <br>- Getting to know the application under test<br>
-    - Creating the first visual regression test with Cypress & Percy<br>
-    - Running the first test<br>
-    - Approving the snapshot on Percy's dashboaard
-</details>
+```
+# Windows
+$ set PERCY_TOKEN=<your token here>
 
-## Lesson 4
+# Unix
+$ export PERCY_TOKEN=<your token here>
+```
 
-Testing an invalid email address
+> Source: https://docs.percy.io/docs/cypress
 
-<details>
-  <summary>Lesson's content</summary>
-    <br>- Writing the test<br>
-    - Running the test<br>
-    - Approving the snapshot on percy.io
-</details>
+## Running the tests
 
-## Lesson 5
-
-Testing filling all the mandatory form fields
-
-<details>
-  <summary>Lesson's content</summary>
-    <br>- Writing the test<br>
-    - Running the test<br>
-    - Approving the snapshot on percy.io
-</details>
-
-## Lesson 6
-
-Testing the selection of a VIP ticket
-
-<details>
-  <summary>Lesson's content</summary>
-    <br>- Writing the test<br>
-    - Running the test<br>
-    - Approving the snapshot on percy.io
-</details>
-
-## Lesson 7
-
-Testing dynamic content
-
-<details>
-  <summary>Lesson's content</summary>
-    <br>- The problem of dynamic content in visual regression testing<br>
-    - Testing successfully submitting the form<br>
-    - Running the test and aproving the snapshot on percy.io<br>
-    - Re-running the tests and getting a false-negative result<br>
-    - Dealing with dynamic content - https://docs.percy.io/docs/percy-specific-css<br>
-    - Re-running the tests and approving the new snapshot on percy.io<br>
-    - Re-running the tests without false-negative results
-</details>
-
-## Lesson 8
-
-Ending
-
-<details>
-  <summary>Lesson's content</summary>
-    <br>- Project docs - updating the README.md file<br>
-    - Learnings summary<br>
-    - Going beyond - #ReadTheDocs
-</details>
+Run `npm test` to execute the tests in headless mode.
 
 ___
 
