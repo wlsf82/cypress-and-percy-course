@@ -1,0 +1,24 @@
+{
+  "name": "percy-and-cypress-course",
+  "version": "1.0.0",
+  "description": "Repository for the basic course of visual regression testing with Cypress and Percy, by Walmyr Filho.",
+  "main": "index.js",
+  "scripts": {
+    "test": "percy exec -- cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wlsf82/cypress-and-percy-course.git"
+  },
+  "keywords": [],
+  "author": "Walmyr Filho <wlsf82@gmail.com> (https://walmyr.dev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wlsf82/cypress-and-percy-course/issues"
+  },
+  "homepage": "https://github.com/wlsf82/cypress-and-percy-course#readme",
+  "devDependencies": {
+    "@percy/cypress": "^2.3.3",
+    "cypress": "^6.2.0"
+  }
+}
