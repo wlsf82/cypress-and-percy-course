@@ -17,4 +17,12 @@ describe('Ticketbox', () => {
     cy.get('#agree').check();
     cy.percySnapshot();
   });
+
+  it('Updates agreement based on full name, tickets quantity, and type', () => {
+    cy.get('#first-name').type('John');
+    cy.get('#last-name').type('Doe');
+    cy.get("#ticket-quantity").select("4");
+    cy.get("#vip").check();
+    cy.percySnapshot();
+  });
 });
