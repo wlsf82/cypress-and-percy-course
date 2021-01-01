@@ -9,4 +9,12 @@ describe('Ticketbox', () => {
     cy.get('#email').type('johndoe-example.com');
     cy.percySnapshot();
   });
+
+  it('Enables submittion after all mandatory fields are filled', () => {
+    cy.get('#first-name').type('John');
+    cy.get('#last-name').type('Doe');
+    cy.get('#email').type('john@doe.com');
+    cy.get('#agree').check();
+    cy.percySnapshot();
+  });
 });
